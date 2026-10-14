@@ -279,27 +279,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>findbugs</artifactId>
-            <version>3.0.1</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.ow2.asm</groupId>
-                    <artifactId>asm-debug-all</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.ow2.asm</groupId>
-                    <artifactId>asm-commons</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.ow2.asm</groupId>
-                    <artifactId>asm-tree</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.ow2.asm</groupId>
-                    <artifactId>asm</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-annotations</artifactId>
+            <version>4.10.5</version>
         </dependency>
     </dependencies>
 
