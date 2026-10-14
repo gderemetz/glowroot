@@ -16,6 +16,19 @@
   <name>Glowroot Agent Integration Test Harness</name>
   <description>Glowroot Agent Integration Test Harness</description>
 
+  <dependencyManagement>
+    <dependencies>
+      <!-- grpc-netty pulls the netty version it was built with, align it with netty.version -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-bom</artifactId>
+        <version>${netty.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.glowroot</groupId>
